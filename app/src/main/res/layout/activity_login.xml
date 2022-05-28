@@ -188,7 +188,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:background="#6C3CC1" />
+        android:background="#FF8210" />
 
     <ImageView
         android:layout_width="wrap_content"

@@ -40,8 +40,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.room.TypeConverter;
-
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.mlkit.vision.common.InputImage;
@@ -50,7 +48,6 @@ import com.google.mlkit.vision.face.FaceDetection;
 import com.google.mlkit.vision.face.FaceDetector;
 import com.google.mlkit.vision.face.FaceDetectorOptions;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -229,10 +226,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
     portraitBmp = Bitmap.createBitmap(targetW, targetH, Config.ARGB_8888);
     faceBmp = Bitmap.createBitmap(TF_OD_API_INPUT_SIZE, TF_OD_API_INPUT_SIZE, Config.ARGB_8888);
-    ByteArrayOutputStream stream = new ByteArrayOutputStream();
-    faceBmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-    byte[] byteArrayImage = stream.toByteArray();
-    faceBmp.recycle();
+
     frameToCropTransform =
             ImageUtils.getTransformationMatrix(
                     previewWidth, previewHeight,
@@ -401,23 +395,21 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
     tvTitle.setText("Add Face");
     ivFace.setImageBitmap(rec.getCrop());
     etName.setHint("Input name");
-    description.setHint("Input Decription of Person");
-
+    description.setHint("Enter Description of the person");
 
     builder.setPositiveButton("OK", new DialogInterface.OnClickListener(){
       @Override
       public void onClick(DialogInterface dlg, int i) {
 
-          String name1 = etName.getText().toString();
-          String desc = description.getText().toString();
-          String name= name1+" "+desc;
-          if (name.isEmpty()) {
-              return;
-          }
-          detector.register(name, rec);
-
-          //knownFaces.put(name, rec);
-          dlg.dismiss();
+        String name1 = etName.getText().toString();
+        String desc = description.getText().toString();
+        String name=name1+" "+desc;
+        if (name.isEmpty()) {
+          return;
+        }
+        detector.register(name, rec);
+        //knownFaces.put(name, rec);
+        dlg.dismiss();
       }
     });
     builder.setView(dialogLayout);
@@ -434,11 +426,11 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
     if (mappedRecognitions.size() > 0) {
-       LOGGER.i("Adding results");
-       SimilarityClassifier.Recognition rec = mappedRecognitions.get(0);
-       if (rec.getExtra() != null) {
-         showAddFaceDialog(rec);
-       }
+      LOGGER.i("Adding results");
+      SimilarityClassifier.Recognition rec = mappedRecognitions.get(0);
+      if (rec.getExtra() != null) {
+        showAddFaceDialog(rec);
+      }
 
     }
 
@@ -535,10 +527,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
         if (add) {
           crop = Bitmap.createBitmap(portraitBmp,
-                            (int) faceBB.left,
-                            (int) faceBB.top,
-                            (int) faceBB.width(),
-                            (int) faceBB.height());
+                  (int) faceBB.left,
+                  (int) faceBB.top,
+                  (int) faceBB.width(),
+                  (int) faceBB.height());
         }
 
         final long startTime = SystemClock.uptimeMillis();
