@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#6C3CC1"
+    android:background="#FF8210"
     android:focusableInTouchMode="true"
     android:gravity="center"
     tools:context=".RegisterActivity">
@@ -214,7 +214,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:background="#6C3CC1" />
+        android:background="#FF8210" />
 
     <ImageView
         android:layout_width="wrap_content"

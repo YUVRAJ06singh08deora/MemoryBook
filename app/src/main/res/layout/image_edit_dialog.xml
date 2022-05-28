@@ -31,6 +31,12 @@
         android:layout_height="wrap_content"
         tools:hint="The dialog hint"
         />
-
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/decription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:hint="The Description hint"
+        />
 
 </LinearLayout>

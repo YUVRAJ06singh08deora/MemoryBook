@@ -22,6 +22,9 @@ import android.graphics.RectF;
 import android.os.Trace;
 import android.util.Pair;
 
+import org.tensorflow.lite.Interpreter;
+import org.tensorflow.lite.examples.MemoryBook.env.Logger;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -36,8 +39,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
-import org.tensorflow.lite.Interpreter;
-import org.tensorflow.lite.examples.MemoryBook.env.Logger;
 
 /**
  * Wrapper for frozen detection models trained using the Tensorflow Object Detection API:

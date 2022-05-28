@@ -33,7 +33,7 @@
                 android:fontFamily="@font/fredoka_one"
                 android:gravity="center"
                 android:text="MEMORYBOOK"
-                android:textColor="#FFDB58"
+                android:textColor="#FF8210"
                 android:textSize="30sp" />
 
             <ProgressBar

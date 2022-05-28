@@ -18,6 +18,7 @@ public class UserEntity {
     @ColumnInfo(name = "name")
     String name;
 
+
     public Integer getId() {
         return id;
     }
