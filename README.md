@@ -12,12 +12,10 @@
 [![Issues](https://img.shields.io/github/issues/aaditrychoudhury/MemoryBook?style=for-the-badge&label=Issues)](https://github.com/aaditrychoudhury/MemoryBook)
 [![Watchers](	https://img.shields.io/github/watchers/aaditrychoudhury/MemoryBook?label=Watch&style=for-the-badge)](https://github.com/aaditrychoudhury/MemoryBook/) 
 
-Video conferencing solutions with `Unite`
-using peer-to-peer connection.
-
+An App to Remember Everything U need.
 <p align="center">
 <a href="https://MemoryBook-apurva.herokuapp.com/landing">
-<img src="https://user-images.githubusercontent.com/59837325/125489372-57d3ad66-fb25-40f8-8d54-5514cbe4b648.png" alt="Unite-logo"/>
+<img src="https://user-images.githubusercontent.com/76275812/170854285-22dc16ce-e5e6-4e6d-b1b7-aaca638395d9.png" alt="Unite-logo"/>
 </a>
 </p>
 
@@ -27,51 +25,55 @@ using peer-to-peer connection.
 
 1. Creating An User Account and Login
    - Seamless landing page with `Login And Register` button for user Login using Room Database.
-   - ![image](https://user-images.githubusercontent.com/59837325/125426848-39db8eeb-3e84-424d-869c-5b344ba55ba1.png)
+   - ![Login_Register](https://user-images.githubusercontent.com/76275812/170854210-72c8a7c5-2de2-41e4-9c08-b3c080cbbd08.gif)
+
+
+   
  
    - Login Page
-   - ![image](https://user-images.githubusercontent.com/59837325/125429293-88f38afe-be80-47ff-b662-2169d87bc476.png)
+   - ![image](https://user-images.githubusercontent.com/76275812/170854358-bae0ed00-c070-4fa2-9d84-08b49aba2b42.png)
    
    
    - Register Page
-   - ![image](https://user-images.githubusercontent.com/59837325/125429293-88f38afe-be80-47ff-b662-2169d87bc476.png)
+   - ![image](https://user-images.githubusercontent.com/76275812/170854377-f981a156-82ee-44da-b778-757ac9001d55.png)
 
 2. Home page 
    - Listed All the Main Features of the App
-   - ![image](https://user-images.githubusercontent.com/59837325/125428224-08fcf962-46af-470a-abae-aaa893d2e0c7.png)
+   - ![Home](https://user-images.githubusercontent.com/76275812/170854587-1a48d8b6-9946-4b45-b26b-f6621fe263b8.gif)
+
+
    
    - Swiping Up from The Left Most Corner It lists all options such as to see acount details to go back to home and Logout Option.
-   - ![image](https://user-images.githubusercontent.com/59837325/125429518-79515f76-8392-413a-9d19-53894db9ee95.png)
+   - ![sidebar](https://user-images.githubusercontent.com/76275812/170854602-7d1260ac-de92-41aa-88c4-c505921622f2.gif)
+
      
 3. Register Face
    - Click on the Register Face Button
-   - ![image](https://user-images.githubusercontent.com/59837325/125431140-7f0a92a8-ca4c-48b5-a91d-e53e69b12cb5.png)
-
    - Click On the Take Picture Button and allow necessary permissions of Camera and press ok when you have clicked the Picture.
-   - ![image](https://user-images.githubusercontent.com/59837325/125432255-d9e05582-5ae0-4b2f-8a07-dba9605a4b6d.png)
-  
    - After taking Picture Click on save user button So that image will be saved in the local Room database.
-   - ![image](https://user-images.githubusercontent.com/59837325/125438181-fd819177-cb36-45bb-a7dd-8acfa5e21b66.png)
+   - ![RegisterFace](https://user-images.githubusercontent.com/76275812/170856482-51580f07-cdce-4018-9590-86c52992f056.gif)
+
    
 4. Face Recognition
    - Click On Face Recognition and one the camera gets opened click on " + " in the RightMost Corner and Register Your Face with a short Description.
-   - ![image](https://user-images.githubusercontent.com/59837325/125438181-fd819177-cb36-45bb-a7dd-8acfa5e21b66.png)
-
    - Once It is Saved It will Automatically Recognize the Face.
-   - ![image](https://user-images.githubusercontent.com/59837325/125438181-fd819177-cb36-45bb-a7dd-8acfa5e21b66.png)
+   - ![RecognizeFace](https://user-images.githubusercontent.com/76275812/170856424-7d0ad1b7-4791-4dc6-8b79-b2da5fe0265c.gif)
+
 
   
    
 
 5. Stored Data
    - You can see the Stored Data by clicking on the Stored Data Button and see the Description of that Person
-   - ![image](https://user-images.githubusercontent.com/59837325/125486957-00bbd600-02ea-4f4f-b040-fc5d25db3251.png)
-   - ![image](https://user-images.githubusercontent.com/59837325/125486640-4ff2bdb8-b2ec-40f8-96c1-4dbdae007af3.png)
+   - ![Storage](https://user-images.githubusercontent.com/76275812/170856622-1bf1d47b-e12c-48a6-a458-e938b24fcfd1.gif)
+
+
    
    
 6. Schedule Reminder 
    - You can Add remonders as well in order to remember anything such as to take medicine or anything else because alzheimer patient's needs to remember too many things at the same time so he can set the reminder from the same app.
-   - ![image](https://user-images.githubusercontent.com/59837325/125440936-e8d4141a-c7b8-4577-b5b0-4cba3d9e63ab.png)
+   - ![Reminder](https://user-images.githubusercontent.com/76275812/170854860-ff1376ed-baf5-4d86-a307-213e1fdb48ea.gif)
+
 
 
 ## Tech stack
@@ -96,28 +98,25 @@ using peer-to-peer connection.
 ## Instructions
 
 
-1. `git clone https://github.com/aaditrychoudhury/MemoryBook.git` 
-2. `cd ./MemoryBook`
-3. Install node dependencies 
-   - `npm install`
-4. Replace firebase API keys with your configurations
-5. Create a `.env` file 
-   - Add relevant credentials
-   - `cp .env.example .env` 
-5. `npm run dev`
-6. The app is now running at http://localhost:3030/landing 
+1. Install the Apk from the Repository.
+2. Open it using Android Smartphone.
+3. Give All necessary permissions whenever asked. 
+4. Create an Account
+5. Login Through That Account 
+5. Hurray!!!!! You are good to go with 'Memory Book'
+
 
 
 ## Useful Links
 
-- [Deployed Website](https://MemoryBook-apurva.herokuapp.com/landing)
+- [Apk](https://MemoryBook-apurva.herokuapp.com/landing)
 - [Demo Video](https://youtu.be/OKKK1GOnlIU)
 - [Sprint Document](https://docs.google.com/presentation/d/11k8pLJPEV-XJwxIX4ysW9fKmHqFEZHcUWizFcFyVsns/edit?usp=sharing)
 - [Design Document](https://docs.google.com/document/d/1IJcEbbhsbQna-tgcnfV_9_RhXQi4SURlrl3-0HypArE/edit?usp=sharing)
 
 ## Need help?
 
-Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/apurva866/) 
+Feel free to contact me on [LinkedIn]() 
 
 [![Instagram](https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&logoColor=white)](https://www.instagram.com/mind.wrapper/) [![Twitter](https://img.shields.io/badge/Twitter-follow-blue.svg?logo=twitter&logoColor=white)](https://twitter.com/mindwrapper) [![Medium](https://img.shields.io/badge/Medium-follow-black.svg?logo=medium&logoColor=white)](https://medium.com/@apurva866)
 
